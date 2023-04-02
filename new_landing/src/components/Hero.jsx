@@ -6,17 +6,17 @@ import {motion} from 'framer-motion';
 import { fadeIn } from './variants';
 
 const Hero = () => (
-    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+    <section id="home" className={`bg-vaca flex md:flex-row flex-col `}>
       <motion.div 
        variants={fadeIn('right',0.3)}
        initial='hidden'
        whileInView={'show'}
        viewport={{once:false,amount: 0.3}} className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-          <div className='flex flex-row justify-between items-center w-full'>
+          <div>
             <h1 className='flex-1 font-poppins font-semibold ss:text-[72pix] text-[52px] text-white ss:leading-[100px] leading-[75px]'>
               The Next <br className='sm:block hidden'/>{" "}
               <span className='text-gradient'>
-              </span><TypeAnimation cursor={false} className="type text-accent" sequence={[
+              </span><TypeAnimation cursor={false} className="type text-gradient" sequence={[
                 'Developer',
                 2000,
                 'Method',
@@ -44,7 +44,7 @@ const Hero = () => (
            initial='hidden'
            whileInView={'show'}
            viewport={{once:false,amount: 0.3}}
-          className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
+          className={`  flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
             <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]"/>
               <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient'></div>
               <div className='absolute z-[1] w-[80%] h-[85%] rounded-full white__gradient'></div>

@@ -5,7 +5,7 @@ import styles from '../style';
 
 const Header = () => {
   return (
-    <header className="py-8">
+    <header className="py-8 bg-vaca">
       <div className={`${styles.padding} ${styles.flexStart}`}>
         <div className="w-full flex justify-between">
           <a href="#">

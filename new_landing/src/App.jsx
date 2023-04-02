@@ -5,23 +5,24 @@ import {Header, Navbar,Hero,Stats,Business,Billing,CardDeal,Testimonials,Clients
 
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
+  <div className="bg-vaca w-full overflow-hidden">
     <Header/>
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-     
+    <Nav />
+    
     </div>
 
-    <div className={`bg-primary ${styles.flexStart}`}>
+    <div className={`bg-vaca ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Hero />
        </div>
     </div>
 
 
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+    <div className={`bg-vaca ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         
-        <Nav />
+        
         <Stats />
         <Business />
         <Billing />
